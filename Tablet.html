@@ -1,0 +1,461 @@
+<!-- Hoàng Minh Phúc B1906550  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nhóm 6 CT188">
+    <meta name="description" content="Shop bán đồ công nghệ cao">
+    <title>Tablet</title>
+    <link rel="stylesheet" href="css/Tablet.css">
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="/font/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="shortcut icon" href="img/iconfpt.png">
+</head>
+
+<body>
+    <div class="page">
+        <header class="page__header">
+            <div class="header__bars" onclick="addClassHeader()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="header__logo">
+                <a href="TrangChu.html"><img src="img/logo (2).png" alt=""></a>
+            </div>
+            <div class="header__nav-search">
+                <form class="header__search--pc" id="header-form--pc" onsubmit="return sendDatapc()" action="timkiem.html">
+                    <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm...">
+                    <i class="fas fa-search" onclick="sendDatapc()"></i>
+
+                </form>
+                <nav class="header__nav">
+                    <a href="TrangChu.html">Trang Chủ</a>
+                    <a href="Dienthoai.html">Điện Thoại</a>
+                    <a href="Laptop.html">Laptop</a>
+                    <a href="Tablet.html">Tablet</a>
+                    <a href="Donghothongminh.html">Đồng Hồ Thông Minh</a>
+                    <a href="Tintuc.html">Tin Tức</a>
+                </nav>
+            </div>
+            <div class="header__account">
+                <a href="dangnhap.html"><i class="fas fa-user-circle"></i></a>
+                <a href="showcart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <form class="header__search--mobile" id="header-form--mobile" onsubmit="return sendDatamb()" action="timkiem.html">
+                <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm...">
+
+
+            </form>
+            <nav class="header__nav--mobile">
+                <i class="fas fa-times" onclick="removeClassHeader()"></i>
+                <a class="nav--mb" href="TrangChu.html">Trang Chủ</a>
+                <a class="nav--mb" href="Dienthoai.html">Điện Thoại</a>
+                <a class="nav--mb" href="Laptop.html">Laptop</a>
+                <a class="nav--mb" href="Tablet.html">Tablet</a>
+                <a class="nav--mb" href="Donghothongminh.html">Đồng Hồ Thông Minh</a>
+                <a class="nav--mb" href="Tintuc.html">Tin Tức</a>
+            </nav>
+        </header>
+        <main class="page__main">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="/img/800-200-800x200-27.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/img/tab-s7-fe-800-200-800x200-1.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/img/800-200-800x200-37.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/img/800-200-800x200-186.png" style="width:100%">
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="img--quangcao">
+                <img src="/img/Sticky-390x97-2.png" alt="">
+                <img src="/img/tab-a7-390-97-390x97.png" alt="">
+            </div>
+            <div class="main__boloc">
+                <div class="dropdown">
+                    <button class="dropbtn">Hãng</button>
+                    <div class="dropdown-content">
+                        <a href="#"><img src="/img/iPad-(Apple)522-b_4.jpg" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/samsungnew-220x48-3.png" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/Tablet-xiaomi-220x48-1.png" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/Huawei522-b_4.jpg" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/Lenovo522-b_6.jpg" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/Masstel522-b_7.png" alt="" class="logo--sanpham"></a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Giá</button>
+                    <div class="dropdown-content">
+                        <a href="#">Dưới 3 triệu</a>
+                        <a href="#">Từ 3 - 8 triệu</a>
+                        <a href="#">Từ 8 - 15 triệu</a>
+                        <a href="#">Trên 15 triệu</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Màn hình</button>
+                    <div class="dropdown-content">
+                        <a href="#">Khoảng 7 - 8 inch</a>
+                        <a href="#">Khoảng 10 - 11 inch</a>
+                        <a href="#">Khoảng 12 inch trở lên</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Ram</button>
+                    <div class="dropdown-content">
+                        <a href="#">2 GB</a>
+                        <a href="#">3 GB</a>
+                        <a href="#">4 GB</a>
+                        <a href="#">6 GB</a>
+                        <a href="#">8 GB</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Bộ nhớ trong</button>
+                    <div class="dropdown-content">
+                        <a href="#">8 GB</a>
+                        <a href="#">16 GB</a>
+                        <a href="#">32 GB</a>
+                        <a href="#">64 GB</a>
+                        <a href="#">128 GB</a>
+                        <a href="#">256 GB</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__sanpham">
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/ipad-pro-2021-129-inch-gray-thumb-600x600.jpg" alt=""></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>041</p>
+                        <p class="name">iPad Pro M1 12.9 inch WiFi Cellular 512GB (2021)</p>
+                        <p class="price">41990000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/ipad-pro-2021-129-inch-silver-600x600.jpg" alt=""></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>042</p>
+                        <p class="name">A iPad Pro M1 12.9 inch WiFi Cellular 256GB (2021)</p>
+                        <p class="price">39490000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/ipad-pro-12-9-inch-wifi-128gb-2020-bac-600x600-1-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>043</p>
+                        <p class="name">
+                            iPad Pro 12.9 inch Wifi 128GB (2020)
+                        </p>
+                        <p class="price">26790000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/ipad-4-cellular-trang-new-600x600-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>044</p>
+                        <p class="name">
+                            iPad Air 4 Wifi Cellular 256GB (2020)
+                        </p>
+                        <p class="price">25490000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/ipad-mini-79-inch-wifi-cellular-64gb-2019-gold-600x600-1-600x600 (1).jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>045</p>
+                        <p class="name">
+                            iPad mini 7.9 inch 64GB (2019) Wifi Cellular
+                        </p>
+                        <p class="price">15490000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/ipad-gen-9-wifi-grey-1-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>046</p>
+                        <p class="name">
+                            iPad 9 WiFi 256GB
+                        </p>
+                        <p class="price">14990000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/huawei-matepad-11-9-1-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>047</p>
+                        <p class="name">
+                            Huawei MatePad 11
+                        </p>
+                        <p class="price">12990000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/ipad-gen-9-wifi-grey-1-600x600 (1).jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>048</p>
+                        <p class="name">
+                            iPad 9 WiFi 64GB
+                        </p>
+                        <p class="price">10990000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/xiaomi-pad-5-grey-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>049</p>
+                        <p class="name">
+                            Xiaomi Pad 5 256GB
+                        </p>
+                        <p class="price">10490000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/samsung-galaxy-tab-s6-lite-600x600-2-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>050</p>
+                        <p class="name">
+                            Samsung Galaxy Tab S6 Lite
+                        </p>
+                        <p class="price">9990000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/xiaomi-pad-5-grey-600x600 (1).jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>051</p>
+                        <p class="name">
+                            Xiaomi Pad 5 128GB
+                        </p>
+                        <p class="price">8890000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/lenovo-tab-p11-plus-2-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>052</p>
+                        <p class="name">
+                            Lenovo Tab P11 Plus
+                        </p>
+                        <p class="price">8190000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/samsung-galaxy-tab-a7-2020-vangdong-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>053</p>
+                        <p class="name">
+                            Samsung Galaxy Tab A7 (2020)
+                        </p>
+                        <p class="price">7990000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/huawei-matepad-xam-128gb-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>054</p>
+                        <p class="name">
+                            Huawei MatePad 128GB (Nền tảng Huawei Mobile Service)
+                        </p>
+                        <p class="price">7790000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/tab-m10-fhd-plus-600-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>055</p>
+                        <p class="name">
+                            Lenovo Tab M10 - FHD Plus
+                        </p>
+                        <p class="price">6190000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/Huawei-MatePad-T10s-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>056</p>
+                        <p class="name">
+                            Huawei MatePad T10s 4GB
+                        </p>
+                        <p class="price">5990000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/samsung-galaxy-tab-a7-lite-gray-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>057</p>
+                        <p class="name">
+                            Samsung Galaxy Tab A7 Lite
+                        </p>
+                        <p class="price">4490000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/lenovo-tab-m8-bac-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>058</p>
+                        <p class="name">
+                            Lenovo Tab M8 (TB-8505X)
+                        </p>
+                        <p class="price">3990000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/masstel-tab-10a-den-1-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>059</p>
+                        <p class="name">
+                            Masstel Tab 10A
+                        </p>
+                        <p class="price">3590000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/masstel-tab-82-den-1-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="from--thongtin">
+                        <p class="item-id" hidden>060</p>
+                        <p class="name">
+                            Masstel Tab 8.2
+                        </p>
+                        <p class="price">3090000</q>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page__footer">
+            <div class="footer__list">
+                <div class="footer__1">
+                    <h3>Hỗ trợ - Dịch vụ</h3>
+                    <a href="">Mua hàng trả góp</a>
+                    <a href="">Hướng dẫn đặt hàng và thanh toán</a>
+                    <a href="">Chính sách bảo hành</a>
+                    <a href="">Câu hỏi thường gặp</a>
+                    <a href="">Tra cứu đơn hàng</a>
+                    <a href="">Chính sách bảo mật</a>
+                    <a href="">Chính sách hủy giao dịch, đổi trả</a>
+                    <a href="">Điều khoản mua bán hàng hóa</a>
+                </div>
+                <div class="footer__2">
+                    <h3>Thông tin liên hệ</h3>
+                    <a href="">Bán hàng online</a>
+                    <a href="">Chăm sóc khách hàng</a>
+                    <a href="">Hỗ trợ kỹ thuật</a>
+                    <a href="">Bảo hành và sửa chữa</a>
+                    <a href="">Liên hệ khối văn phòng</a>
+                    <a href="">Đ/c: 261-263 Khánh Hội, P2, Q4, TPHCM</a>
+                    <a href="">Email: FakePTshop@fpt.com.vn</a>
+                    <a href="">Hotline: 1800 6601</a>
+                </div>
+                <div class="footer__3">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <div class="footer__3--icon">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__4">
+                <p>Copyright © 2021 FakePT Shop . Design by N6-CT188</p>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+        </footer>
+    </div>
+    <script src="js/cart.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+
+</html>

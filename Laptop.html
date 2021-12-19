@@ -1,0 +1,428 @@
+<!-- Lê Văn Đông B1910365 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nhóm 6 CT188">
+    <meta name="description" content="Shop bán đồ công nghệ cao">
+    <title>Laptop</title>
+    <link rel="stylesheet" href="css/Laptop.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="shortcut icon" href="img/iconfpt.png">
+</head>
+
+<body>
+    <div class="page">
+        <header class="page__header">
+            <div class="header__bars" onclick="addClassHeader()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="header__logo">
+                <a href="TrangChu.html"><img src="img/logo (2).png" alt=""></a>
+            </div>
+            <div class="header__nav-search">
+                <form class="header__search--pc" id="header-form--pc" onsubmit="return sendDatapc()" action="timkiem.html">
+                    <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm...">
+                    <i class="fas fa-search" onclick="sendDatapc()"></i>
+
+                </form>
+                <nav class="header__nav">
+                    <a href="TrangChu.html">Trang Chủ</a>
+                    <a href="Dienthoai.html">Điện Thoại</a>
+                    <a href="Laptop.html">Laptop</a>
+                    <a href="Tablet.html">Tablet</a>
+                    <a href="Donghothongminh.html">Đồng Hồ Thông Minh</a>
+                    <a href="Tintuc.html">Tin Tức</a>
+                </nav>
+            </div>
+            <div class="header__account">
+                <a href="dangnhap.html"><i class="fas fa-user-circle"></i></a>
+                <a href="showcart.html"> <i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <form class="header__search--mobile" id="header-form--mobile" onsubmit="return sendDatamb()" action="timkiem.html">
+                <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm...">
+
+
+            </form>
+            <nav class="header__nav--mobile">
+                <i class="fas fa-times" onclick="removeClassHeader()"></i>
+                <a class="nav--mb" href="TrangChu.html">Trang Chủ</a>
+                <a class="nav--mb" href="Dienthoai.html">Điện Thoại</a>
+                <a class="nav--mb" href="Laptop.html">Laptop</a>
+                <a class="nav--mb" href="Tablet.html">Tablet</a>
+                <a class="nav--mb" href="Donghothongminh.html">Đồng Hồ Thông Minh</a>
+                <a class="nav--mb" href="Tintuc.html">Tin Tức</a>
+            </nav>
+        </header>
+        <main class="page__main">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <a href=""><img src="img/side1.png" style="width:100%"></a>
+                </div>
+                <div class="mySlides fade">
+                    <a href=""><img src="img/side2.png" style="width:100%"></a>
+                </div>
+                <div class="mySlides fade">
+                    <a href=""><img src="img/side3.png" style="width:100%"></a>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="img">
+                <a href=""> <img src="img/asus-b5-595-100-max.png" alt=""></a>
+                <a href=""> <img src="img/zbfl-595-100-max.png" alt=""></a>
+            </div>
+            <div class="main__boloc">
+                <div class="dropdown">
+                    <button class="dropbtn">Hãng</button>
+                    <div class="dropdown-content">
+                        <a href="#"><img src="/img/logogigabyte.jpg" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/logo asus.png" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/logo acer.png" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/logo dell.png" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/logo hp.png " alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/logo macbook.png" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/logo msi.png" alt="" class="logo--sanpham"></a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Giá</button>
+                    <div class="dropdown-content">
+                        <a href="#">Từ 5-10 triệu</a>
+                        <a href="#">Từ 10-20 triệu</a>
+                        <a href="#">Từ 20-30 triệu</a>
+                        <a href="#">Trên 30 triệu</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Màn hình</button>
+                    <div class="dropdown-content">
+                        <a href="#">Khoảng 13""</a>
+                        <a href="#">Khoảng 14""</a>
+                        <a href="#">Trên 15""</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Cấu hình</button>
+                    <div class="dropdown-content">
+                        <a href="#">Intel Core i3</a>
+                        <a href="#">Intel Core i7</a>
+                        <a href="#">Intel Core i9</a>
+                        <a href="#">AMD Ryzen 3</a>
+                        <a href="#">AMD Ryzen 5</a>
+                        <a href="#">AMD Ryzen 7</a>
+                        <a href="#">AMD Ryzen 9</a>
+                        <a href="#">Apple M1</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-ds">
+                <h3>Chọn theo nhu cầu</h3>
+                <nav class="ds">
+                    <a href="">Học tập văn phòng</a>
+                    <a href="">Đồ họa - Kỹ thuật</a>
+                    <a href="">Cao cấp - Sang trọng</a>
+                    <a href="">Gaming</a>
+                </nav>
+            </div>
+            <h3 class="name-nd">top 5 laptop nổi bật</h3>
+            <div class="main__sanpham">
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/asus-tuf-gaming-fx516pe-i7-hn005t-600x600.jpg" alt="Asus TUF Gaming FX516PE i7 11370H (HN005T)"></a>
+                    <div class="item-info">
+                        <p class="item-id" hidden>021</p>
+                        <p class="name">Asus TUF Gaming FX516PE i7 11370H (HN005T)</p>
+                        <p class="price">27990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/acer-predator-triton-300-pt315-53-71dj-i7-600x600.jpg" alt="Acer Predator Triton 300 PT315 53 71DJ i7 11800H"></a>
+                    <div class="item-info">
+                        <p class="item-id" hidden>022</p>
+                        <p class="name">Acer Predator Triton 300 PT315 53 71DJ i7 11800H</p>
+                        <p class="price">48140000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/dell-gaming-g15-5515-r5-p105f004cgr-291121-115616-600x600.jpg" alt="Dell Gaming G15 5515 R5 5600H (P105F004CGR)"></a>
+                    <div class="item-info">
+                        <p class="item-id" hidden>023</p>
+                        <p class="name">Dell Gaming G15 5515 R5 5600H (P105F004CGR)</p>
+                        <p class="price">24990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/gigabyte-gaming-g5-i5-10500h-16gb-512gb-6gb-171121-034937-600x600.jpg" alt="Gigabyte Gaming G5 i5 10500H 16GB 512GB"></a>
+                    <div class="item-info">
+                        <p class="item-id" hidden>024</p>
+                        <p class="name">Gigabyte Gaming G5 i5 10500H 16GB 512GB</p>
+                        <p class="price">26990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/msi-gf66-11uc-i7-224vn-600x600.jpg" alt="MSI Katana Gaming GF66 11UC i7 11880H (224VN)"></a>
+                    <div class="item-info">
+                        <p class="item-id" hidden>025</p>
+                        <p class="name">MSI Katana Gaming GF66 11UC i7 11880H (224VN)</p>
+                        <p class="price">28290000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <a href=""> <img class="banner" src="img/Group5015-1920x200.jpg" alt="" width="1200" height="200"></a>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/hp-15s-fq2559tu-i5-46m27pa-600x600.jpg" alt="HP 15 fq2599TU i5 1135G7"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>026</p>
+                        <p class="name">HP 15 fq2599TU i5 1135G7</p>
+                        <p class="price">17990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/dell-inspiron-15-5510-i5-0wt8r1-021121-125153-600x600.jpg" alt="Dell Inspiron 15 5510 i5 11300H (0WT8R1)"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>027</p>
+                        <p class="name">Dell Inspiron 15 5510 i5 11300H (0WT8R1)</p>
+                        <p class="price">22990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/asus-vivobook-x515ea-i3-bq994t-13-600x600.jpg" alt="Asus VivoBook X515EA i3 1115G4 (BQ994T)"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>028</p>
+                        <p class="name">Asus VivoBook X515EA i3 1115G4 (BQ994T)</p>
+                        <p class="price">13690000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/msi-modern-14-b11mou-i3-849vn-021121-113011-600x600.jpg" alt="MSI Modern 11 B11MOU i3 1115G4 (849VB)"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>029</p>
+                        <p class="name">MSI Modern 11 B11MOU i3 1115G4 (849VB)</p>
+                        <p class="price">14190000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/lenovo-yoga-slim-7-14itl05-i7-1165g7-8gb-600x600.jpg" alt="Lenovo Yoga Slim 7 14ILT05 i5 1135G7 (82A300DPVN)"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>030</p>
+                        <p class="name">Lenovo Yoga Slim 7 14ILT05 i5 1135G7 (82A300DPVN)</p>
+                        <p class="price">23590000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/hp-zbook-firefly-14-g8-i7-275w0av-251121-045610-600x600.jpg" alt="HP ZBook FireFly 14 G8 i7 1165G7 (275W0AV)"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>031</p>
+                        <p class="name">HP ZBook FireFly 14 G8 i7 1165G7 (275W0AV)</p>
+                        <p class="price">51590000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/acer-aspire-a514-54-53t8-i5-nxa2asv006-600x600.jpg" alt="Acer Aspire A514 54 53T8 i5 1135G7"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>032</p>
+                        <p class="name">Acer Aspire A514 54 53T8 i5 1135G7</p>
+                        <p class="price">17790000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/asus-vivobook-a515ea-oled-i5-1135g7-8gb-600x600.jpg" alt="Asus VivoBook A515AE OLED i5 1113G7 (L12032W)"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>033</p>
+                        <p class="name">Asus VivoBook A515AE OLED i5 1113G7 (L12032W)</p>
+                        <p class="price">19690000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/acer-nitro-5-gaming-an515-57-720a-i7-nhqeqsv004-171121-024959-600x600.jpg" alt="Acer Nitro 5 Gaming AN515 57 720A i7 11800H"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>034</p>
+                        <p class="name">Acer Nitro 5 Gaming AN515 57 720A i7 11800H</p>
+                        <p class="price">28660000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/asus-zenbook-ux482ea-i5-ka274t-271021-093120-600x600.jpg" alt="Asus ZenBook Dou UX482EA i5 1135G7 (KA274T)"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>035</p>
+                        <p class="name">Asus ZenBook Dou UX482EA i5 1135G7 (KA274T)</p>
+                        <p class="price">32490000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/macbook-air-m1-2020-gray-600x600.jpg" alt="MacBook Air M1 2020 7-core GPU"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>036</p>
+                        <p class="name">MacBook Air M1 2020 7-core GPU</p>
+                        <p class="price">27490000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/apple-macbook-pro-16-m1-pro-2021-10-core-cpu-600x600.jpg" alt="MacBook Pro 16 M1 Pro 2021/16 core-GPU"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>037</p>
+                        <p class="name">MacBook Pro 16 M1 Pro 2021/16 core-GPU</p>
+                        <p class="price">64990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/msi-summit-e13-flip-i7-211vn-19-600x600.jpg" alt="MSI Summit E13 Flip3 i7 1185G7 (221VN)"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>038</p>
+                        <p class="name">MSI Summit E13 Flip3 i7 1185G7 (221VN)</p>
+                        <p class="price">39990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/hp-envy-13-ba1031tu-i7-2k0b7pa-103120-093102-600x600.jpg" alt="HP Envy 13 ba1535TU i7 1166G7 (4U6M4PA)"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>039</p>
+                        <p class="name">HP Envy 13 ba1535TU i7 1166G7 (4U6M4PA)</p>
+                        <p class="price">29590000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/dell-g3-15-i7-p89f002bwh-16-600x600.jpg" alt="Dell Gaming G3 15 i7 10750H (P89F002BWH)"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>040</p>
+                        <p class="name">Dell Gaming G3 15 i7 10750H (P89F002BWH)</p>
+                        <p class="price">31190000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page__footer">
+            <div class="footer__list">
+                <div class="footer__1">
+                    <h3>Hỗ trợ - Dịch vụ</h3>
+                    <a href="">Mua hàng trả góp</a>
+                    <a href="">Hướng dẫn đặt hàng và thanh toán</a>
+                    <a href="">Chính sách bảo hành</a>
+                    <a href="">Câu hỏi thường gặp</a>
+                    <a href="">Tra cứu đơn hàng</a>
+                    <a href="">Chính sách bảo mật</a>
+                    <a href="">Chính sách hủy giao dịch, đổi trả</a>
+                    <a href="">Điều khoản mua bán hàng hóa</a>
+                </div>
+                <div class="footer__2">
+                    <h3>Thông tin liên hệ</h3>
+                    <a href="">Bán hàng online</a>
+                    <a href="">Chăm sóc khách hàng</a>
+                    <a href="">Hỗ trợ kỹ thuật</a>
+                    <a href="">Bảo hành và sửa chữa</a>
+                    <a href="">Liên hệ khối văn phòng</a>
+                    <a href="">Đ/c: 261-263 Khánh Hội, P2, Q4, TPHCM</a>
+                    <a href="">Email: FakePTshop@fpt.com.vn</a>
+                    <a href="">Hotline: 1800 6601</a>
+                </div>
+                <div class="footer__3">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <div class="footer__3--icon">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__4">
+                <p>Copyright © 2021 FakePT Shop . Design by N6-CT188</p>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+        </footer>
+    </div>
+    <script src="js/cart.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+
+</html>

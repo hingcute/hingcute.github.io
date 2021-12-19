@@ -1,0 +1,410 @@
+<!-- Lê Văn Đông B1910365 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nhóm 6 CT188">
+    <meta name="description" content="Shop bán đồ công nghệ cao">
+    <title>Điện Thoại</title>
+    <link rel="stylesheet" href="css/Dienthoai.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="shortcut icon" href="img/iconfpt.png">
+</head>
+
+<body>
+    <div class="page">
+        <header class="page__header">
+            <div class="header__bars" onclick="addClassHeader()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="header__logo">
+                <a href="TrangChu.html"><img src="img/logo (2).png" alt=""></a>
+            </div>
+            <div class="header__nav-search">
+
+                <form class="header__search--pc" id="header-form--pc" onsubmit="return sendDatapc()" action="timkiem.html">
+                    <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm...">
+                    <i class="fas fa-search" onclick="sendDatapc()"></i>
+
+                </form>
+                <nav class="header__nav">
+                    <a href="TrangChu.html">Trang Chủ</a>
+                    <a href="Dienthoai.html">Điện Thoại</a>
+                    <a href="Laptop.html">Laptop</a>
+                    <a href="Tablet.html">Tablet</a>
+                    <a href="Donghothongminh.html">Đồng Hồ Thông Minh</a>
+                    <a href="Tintuc.html">Tin Tức</a>
+                </nav>
+            </div>
+            <div class="header__account">
+                <a href="dangnhap.html"><i class="fas fa-user-circle"></i></a>
+                <a href="showcart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <form class="header__search--mobile" id="header-form--mobile" onsubmit="return sendDatamb()" action="timkiem.html">
+                <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm...">
+
+
+            </form>
+            <nav class="header__nav--mobile">
+                <i class="fas fa-times" onclick="removeClassHeader()"></i>
+                <a class="nav--mb" href="TrangChu.html">Trang Chủ</a>
+                <a class="nav--mb" href="Dienthoai.html">Điện Thoại</a>
+                <a class="nav--mb" href="Laptop.html">Laptop</a>
+                <a class="nav--mb" href="Tablet.html">Tablet</a>
+                <a class="nav--mb" href="Donghothongminh.html">Đồng Hồ Thông Minh</a>
+                <a class="nav--mb" href="Tintuc.html">Tin Tức</a>
+            </nav>
+        </header>
+        <main class="page__main">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="/img/BAIVIET-oppo-sale-het-co-copy.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/img/giam-gia.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/img/Series-A.png" style="width:100%">
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="img--quangcao">
+                <img src="/img/11t-pro-595x100_1_.png" alt="">
+                <img src="/img/sw-595-100-max.png" alt="">
+            </div>
+            <div class="main__boloc">
+                <div class="dropdown">
+                    <button class="dropbtn">Hãng</button>
+                    <div class="dropdown-content">
+                        <a href="#"><img src="/img/logo-iphone-220x48.png" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/samsungnew-220x48-3.png" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/Tablet-xiaomi-220x48-1.png" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/OPPO42-b_5.jpg" alt="" class="logo--sanpham"></a>
+                        <a href="#"><img src="/img/Vivo42-b_50.jpg" alt="" class="logo--sanpham"></a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Giá</button>
+                    <div class="dropdown-content">
+                        <a href="#">Dưới 3 triệu</a>
+                        <a href="#">Dưới 5 triệu</a>
+                        <a href="#">Dưới 7 triệu</a>
+                        <a href="#">Dưới 10 triệu</a>
+                        <a href="#">Trên 10 triệu</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Màn hình</button>
+                    <div class="dropdown-content">
+                        <a href="#">Khoảng 4""</a>
+                        <a href="#">Khoảng 5""</a>
+                        <a href="#">Khoảng 6""</a>
+                        <a href="#">Trên 6""</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Pin</button>
+                    <div class="dropdown-content">
+                        <a href="#">3000mAh</a>
+                        <a href="#">4000mAh</a>
+                        <a href="#">5000mAh</a>
+                        <a href="#">6000mAh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__sanpham">
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/samsung A52.jpg" alt="Samsung A52"></a>
+                    <div class="item-info">
+                        <p class="item-id" hidden>001</p>
+                        <p class="name">Galaxy A52 8GB/256GB</p>
+                        <p class="price">9290000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/Oppo A74.jpg" alt="Oppo A74"></a>
+                    <div class="item-info">
+                        <p class="item-id" hidden>002</p>
+                        <p class="name">Oppo A74 6GB/128GB</p>
+                        <p class="price">6690000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/xiaomi 11T Pro 5G.jpg" alt="Xiaomi 11T Pro 5G"></a>
+                    <div class="item-info">
+                        <p class="item-id" hidden>003</p>
+                        <p class="name">Xiaomi 11T Pro 5G 12GB/256GB</p>
+                        <p class="price">14990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/xiaomi-redmi-note-10s-xanh-1-600x600.jpg" alt="Xiaomi redmi note 10s"></a>
+                    <div class="item-info">
+                        <p class="item-id" hidden>004</p>
+                        <p class="name">Xiaomi Redmi Note 10S 8GB/128GB</p>
+                        <p class="price">6490000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/iphone-13-midnight-2-600x600.jpg" alt="Iphone 13"></a>
+                    <div class="item-info">
+                        <p class="item-id" hidden>005</p>
+                        <p class="name">Iphone 13 4GB/128GB</p>
+                        <p class="price">24490000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/samsung-galaxy-z-fold-3-silver-1-600x600.jpg" alt="Samsung Galaxy Z Flod3 5G"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>006</p>
+                        <p class="name">Samsung Galaxy Z Flod3 5G 256GB</p>
+                        <p class="price">35990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/vivo-x70-pro-xanh-hong-1-600x600.jpg" alt="Vivo X70 Pro 5G"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>007</p>
+                        <p class="name">Vivo X70 Pro 5G</p>
+                        <p class="price">18990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/vivo-v21-5g-xanh-den-600x600.jpg" alt="Vivo V21 5G"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>008</p>
+                        <p class="name">Vivo V21 5G</p>
+                        <p class="price">9690000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/samsung-galaxy-z-flip-3-violet-1-600x600.jpg" alt="Samsung Galaxy Z Filp3 5G"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>009</p>
+                        <p class="name">Samsung Galaxy Z Flip3 5G</p>
+                        <p class="price">21990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/oppo-reno6-z-5g-aurora-1-600x600.jpg" alt="Oppo Reno6 Z 5G"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>010</p>
+                        <p class="name">Oppo Reno6 Z 5G</p>
+                        <p class="price">9490000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/iphone-xr-hopmoi-den-600x600-2-600x600.jpg" alt="Iphone XR"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>011</p>
+                        <p class="name">Iphone XR</p>
+                        <p class="price">14990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/oppo-find-x3-pro-black-001-1-600x600.jpg" alt="Oppo Find X3 Pro 5G"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>012</p>
+                        <p class="name">Oppo Find X3 Pro 5G</p>
+                        <p class="price">23990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/iphone-se-128gb-2020-trang-600x600.jpg" alt="Iphone SE 2020"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>013</p>
+                        <p class="name">Iphone SE 2020 128GB</p>
+                        <p class="price">12490000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/samsung-galaxy-note-20-062220-122200-fix-600x600.jpg" alt="Samsung Galaxy Note 20"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>014</p>
+                        <p class="name">Samsung Galaxy Note 20</p>
+                        <p class="price">15990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/realme-7-pro-bac-600x600.jpg" alt="Realme 7 Pro"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>015</p>
+                        <p class="name">Realme 7 Pro</p>
+                        <p class="price">8790000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/oppo-reno5-marvel-thumb-600x600-600x600.jpg" alt="Oppo Reno5 Marvel"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>016</p>
+                        <p class="name">Oppo Reno5 Marvel</p>
+                        <p class="price">9690000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/Vivo-V23e-1-2-600x600.jpg" alt="Vivo V23e"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>017</p>
+                        <p class="name">Vivo V23e</p>
+                        <p class="price">8490000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/xiaomi-11-lite-5g-ne-pink-600x600.jpg" alt="Xiaomi 11 Lite 5G NE"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>018</p>
+                        <p class="name">Xiaomi 11 Lite 5G NE</p>
+                        <p class="price">9490000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/samsung-galaxy-s21-tim-600x600.jpg" alt="Samsung Galaxy S21 5G"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>019</p>
+                        <p class="name">Samsung Galaxy S21 5G</p>
+                        <p class="price">17990000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+                <div class="from">
+                    <a href=""><img class="from__img" src="/img/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg" alt="Iphone 12 Pro Max"></a>
+                    <div class="product-item-info">
+                        <p class="item-id" hidden>020</p>
+                        <p class="name">Iphone 12 Pro Max</p>
+                        <p class="price">31490000</p>
+                    </div>
+                    <a href="" class="btn-buy">Thêm vào giỏ hàng</a>
+                    <div class="promotion">
+                        <p class="gift-cont">Giảm 1 triệu khi thanh toán qua ví Moca, thẻ tín dụng BIDV, Standard Charter (số lượng có hạn)</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page__footer">
+            <div class="footer__list">
+                <div class="footer__1">
+                    <h3>Hỗ trợ - Dịch vụ</h3>
+                    <a href="">Mua hàng trả góp</a>
+                    <a href="">Hướng dẫn đặt hàng và thanh toán</a>
+                    <a href="">Chính sách bảo hành</a>
+                    <a href="">Câu hỏi thường gặp</a>
+                    <a href="">Tra cứu đơn hàng</a>
+                    <a href="">Chính sách bảo mật</a>
+                    <a href="">Chính sách hủy giao dịch, đổi trả</a>
+                    <a href="">Điều khoản mua bán hàng hóa</a>
+                </div>
+                <div class="footer__2">
+                    <h3>Thông tin liên hệ</h3>
+                    <a href="">Bán hàng online</a>
+                    <a href="">Chăm sóc khách hàng</a>
+                    <a href="">Hỗ trợ kỹ thuật</a>
+                    <a href="">Bảo hành và sửa chữa</a>
+                    <a href="">Liên hệ khối văn phòng</a>
+                    <a href="">Đ/c: 261-263 Khánh Hội, P2, Q4, TPHCM</a>
+                    <a href="">Email: FakePTshop@fpt.com.vn</a>
+                    <a href="">Hotline: 1800 6601</a>
+                </div>
+                <div class="footer__3">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <div class="footer__3--icon">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__4">
+                <p>Copyright © 2021 FakePT Shop . Design by N6-CT188</p>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+        </footer>
+    </div>
+    <script src="js/cart.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+
+</html>

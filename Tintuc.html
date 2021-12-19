@@ -1,0 +1,236 @@
+<!-- Hoàng Minh Phúc B1906550  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nhóm 6 CT188">
+    <meta name="description" content="Shop bán đồ công nghệ cao">
+    <title>Tin tức</title>
+    <link rel="stylesheet" href="css/tintuc.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="shortcut icon" href="img/iconfpt.png">
+</head>
+
+<body>
+    <div class="page">
+        <header class="page__header">
+            <div class="header__bars" onclick="addClassHeader()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="header__logo">
+                <a href="TrangChu.html"><img src="./img/logo (2).png" alt=""></a>
+            </div>
+            <div class="header__nav-search">
+                <form class="header__search--pc" id="header-form--pc" onsubmit="return sendDatapc()" action="timkiem.html">
+                    <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm...">
+                    <i class="fas fa-search" onclick="sendDatapc()"></i>
+
+                </form>
+                <nav class="header__nav">
+                    <a href="TrangChu.html">Trang Chủ</a>
+                    <a href="Dienthoai.html">Điện Thoại</a>
+                    <a href="Laptop.html">Laptop</a>
+                    <a href="Tablet.html">Tablet</a>
+                    <a href="Donghothongminh.html">Đồng Hồ Thông Minh</a>
+                    <a href="Tintuc.html">Tin Tức</a>
+                </nav>
+            </div>
+            <div class="header__account">
+                <a href="dangnhap.html"><i class="fas fa-user-circle"></i></a>
+                <a href=""> <i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <form class="header__search--mobile" id="header-form--mobile" onsubmit="return sendDatamb()" action="timkiem.html">
+                <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm...">
+
+
+            </form>
+            <nav class="header__nav--mobile">
+                <i class="fas fa-times" onclick="removeClassHeader()"></i>
+                <a class="nav--mb" href="TrangChu.html">Trang Chủ</a>
+                <a class="nav--mb" href="Dienthoai.html">Điện Thoại</a>
+                <a class="nav--mb" href="Laptop.html">Laptop</a>
+                <a class="nav--mb" href="Tablet.html">Tablet</a>
+                <a class="nav--mb" href="Donghothongminh.html">Đồng Hồ Thông Minh</a>
+                <a class="nav--mb" href="Tintuc.html">Tin Tức</a>
+            </nav>
+        </header>
+        <main class="page__main">
+            <div class="main__tintuc">
+                <div class="main__tintuc1">
+                    <h2>TIN NỔI BẬT</h2>
+                    <div class="gachchan">
+                        <div class="gachchan1"></div>
+                    </div>
+                    <div class="tintuc--1">
+                        <a href=""><img width="270px" height="170px" src="img/ngdngcyuthchappstore2021-16388-6096-7023-1638806763.jpg" alt=""></a>
+                        <span>Những ứng dụng Việt được yêu thích nhất trên App Store</span>
+                    </div>
+                    <div class="tintuc--1">
+                        <a href=""><img width="270px" height="170px" src="img/800x1copy-1638869620-2828-1638869761.jpg" alt=""></a>
+                        <span>Robot Sophia có phiên bản NFT</span>
+                    </div>
+                </div>
+                <div class="main__tintuc2">
+                    <h2>TIN TỨC</h2>
+                    <div class="gachchan">
+                        <div class="gachchan1"></div>
+                    </div>
+                    <div class="tintuc">
+                        <div class="thongtin">
+                            <a href="">Ưu đãi lên tới 50% cho khách hàng khi nạp thẻ, thanh toán hóa đơn dịch vụ bằng tài khoản VNPT Pay - Mobile Money</a>
+                            <br>
+                            <span>
+                                Để có thông tin và nhận được các ưu đãi tốt nhất, lên tới 50% giá trị thẻ nạp và hóa đơn Internet, truyền hình, điện ...
+                            </span>
+                        </div>
+                        <a href=""><img width="250px" height="150px" src="/img/26553612332078856661120712232215764096496630n-1638931253258331947950-16392269353181863429147.jpg" alt=""></a>
+                    </div>
+                    <div class="tintuc">
+                        <div class="thongtin">
+                            <a href="">
+                                Bphone giá rẻ của BKAV lộ giá bán: Liệu có đủ hấp dẫn để giúp BKAV lọt top 2 thị phần trong năm 2023?
+                            </a>
+                            <br>
+                            <span>
+                                Chúng tôi đã có trong tay giá bán dự kiến của loạt Bphone dòng A sắp được BKAV mở bán trong thời gian tới.
+                            </span>
+                        </div>
+                        <a href=""><img width="250px" height="150px" src="/img/photo-2-16393021308051362950789-10-0-810-1280-crop-1639302312180-63774924362438.jpg" alt=""></a>
+                    </div>
+                    <div class="tintuc">
+                        <div class="thongtin">
+                            <a href="">
+                                Cách không cho người khác "mò" ra Facebook ngay cả khi bạn bị lộ số điện thoại
+                            </a>
+                            <br>
+                            <span>
+                                Nếu bạn không thích việc bị ai đó rình mò trên Facebook chỉ vì người đó đã biết số điện thoại của bạn, hãy thực hiện ...
+                            </span>
+                        </div>
+                        <a href=""><img width="250px" height="150px" src="/img/photo1638724648284-1638724648584232725569.jpg" alt=""></a>
+                    </div>
+                    <div class="tintuc">
+                        <div class="thongtin">
+                            <a href="">
+                                Sony giới thiệu hệ thống loa HT-A9 cùng loa thanh HT-A7000 đến thị trường Việt Nam: Thiết kế ấn tượng, hỗ trợ âm thanh vòm độc đáo 360 Spatial Sound Mapping
+                            </a>
+                            <br>
+                            <span>
+                                Đây là hai hệ thống loa âm thanh vòm cao cấp, hứa hẹn sẽ mang đến trải nghiệm giải trí bùng nổ trong gia đình.
+                            </span>
+                        </div>
+                        <a href=""><img width="250px" height="150px" src="/img/photo1639203867629-16392038678631546827471.jpg" alt=""></a>
+                    </div>
+                    <div class="tintuc">
+                        <div class="thongtin">
+                            <a href="">
+                                Đồng hồ thông minh Huawei có gì mà “đốn tim” nhiều sao Việt đến vậy
+                            </a>
+                            <br>
+                            <span>
+                                Sở hữu nhiều điểm nhấn về thiết kế cũng như tính năng chăm sóc sức khoẻ, đồng thời truyền cảm hứng tập luyện bền bỉ, bộ ...
+                            </span>
+                        </div>
+                        <a href=""><img width="250px" height="150px" src="/img/hinhava-huawei-16391300548401614921423-60-0-953-1428-crop-1639130100957-63774757819102.jpg" alt=""></a>
+                    </div>
+                    <div class="tintuc">
+                        <div class="thongtin">
+                            <a href="">
+                                Sony Việt Nam giới thiệu chương trình “Tết sum vầy cùng Sony - Đong đầy ưu đãi lớn”
+                            </a>
+                            <br>
+                            <span>
+                                Nhằm đem đến cho khách hàng ưu đãi thiết thực nhất vào dịp cuối năm, Sony Electronics Việt Nam thực hiện chương trình ...
+                            </span>
+                        </div>
+                        <a href=""><img width="250px" height="150px" src="/img/photo-1-1639127821614950285216-0-22-708-1156-crop-1639128122463-63774754382406.jpg" alt=""></a>
+                    </div>
+                    <div class="tintuc">
+                        <div class="thongtin">
+                            <a href="">
+                                Apple sắp "to" hơn cả nền kinh tế Anh
+                            </a>
+                            <br>
+                            <span>
+                                Chỉ cần cổ phiếu tăng 6%, giá trị thị trường của Apple sẽ đạt 3.000 tỷ USD, lớn hơn toàn bộ thị trường chứng khoán Đức ...
+                            </span>
+                        </div>
+                        <a href=""><img width="250px" height="150px" src="/img/photo1639101533010-16391015332561046497597.jpg" alt=""></a>
+                    </div>
+                    <div class="tintuc">
+                        <div class="thongtin">
+                            <a href="">
+                                Giải mã cụm từ hot nhất ngày 12/12: "Hoàn tiền 100%"
+                            </a>
+                            <br>
+                            <span>
+                                Các tín đồ săn sale đang xôn xao trước sự xuất hiện của chương trình hoàn tiền 100% không thể sâu hơn của sàn Sendo ...
+                            </span>
+                        </div>
+                        <a href=""><img width="250px" height="150px" src="/img/photo-1-16392160271341814184203-0-22-643-1051-crop-1639216226572-63774839010396.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page__footer">
+            <div class="footer__list">
+                <div class="footer__1">
+                    <h3>Hỗ trợ - Dịch vụ</h3>
+                    <a href="">Mua hàng trả góp</a>
+                    <a href="">Hướng dẫn đặt hàng và thanh toán</a>
+                    <a href="">Chính sách bảo hành</a>
+                    <a href="">Câu hỏi thường gặp</a>
+                    <a href="">Tra cứu đơn hàng</a>
+                    <a href="">Chính sách bảo mật</a>
+                    <a href="">Chính sách hủy giao dịch, đổi trả</a>
+                    <a href="">Điều khoản mua bán hàng hóa</a>
+                </div>
+                <div class="footer__2">
+                    <h3>Thông tin liên hệ</h3>
+                    <a href="">Bán hàng online</a>
+                    <a href="">Chăm sóc khách hàng</a>
+                    <a href="">Hỗ trợ kỹ thuật</a>
+                    <a href="">Bảo hành và sửa chữa</a>
+                    <a href="">Liên hệ khối văn phòng</a>
+                    <a href="">Đ/c: 261-263 Khánh Hội, P2, Q4, TPHCM</a>
+                    <a href="">Email: FakePTshop@fpt.com.vn</a>
+                    <a href="">Hotline: 1800 6601</a>
+                </div>
+                <div class="footer__3">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <div class="footer__3--icon">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__4">
+                <p>Copyright © 2021 FakePT Shop . Design by N6-CT188</p>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+        </footer>
+    </div>
+</body>
+<script src="js/index.js"></script>
+<script>
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+</script>
+
+</html>
